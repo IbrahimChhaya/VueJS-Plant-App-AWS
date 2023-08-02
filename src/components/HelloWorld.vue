@@ -203,7 +203,7 @@
     height: 25%;
     display: flex;
     flex-direction: column;
-    background-image: url("monsteraBackground.png");
+    background-image: url("../assets/monsteraBackground.png");
     background-size: cover;
     filter: brightness(125%);
     padding: 15px;
