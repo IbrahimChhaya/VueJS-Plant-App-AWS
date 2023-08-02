@@ -32,7 +32,7 @@
             rounded="0"
             size="80">
             <v-img
-              src="monstera.jpg"
+              src="../assets/monstera.jpg"
             ></v-img>
           </v-avatar>
           <div class="plant-name">
