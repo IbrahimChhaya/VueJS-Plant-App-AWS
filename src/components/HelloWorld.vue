@@ -32,7 +32,7 @@
             rounded="0"
             size="80">
             <v-img
-              src="../assets/monstera.jpg"
+              :src="`data:image/jpg;base64,${plant.imageBytes}`"
             ></v-img>
           </v-avatar>
           <div class="plant-name">
@@ -130,17 +130,17 @@
         try {
           const plantResponse = await axios.get('https://rrwjwwqfl4.execute-api.us-west-2.amazonaws.com/prod/plants');
           
-          plantResponse.data.plants.Items.map((plant : any) => {
+          plantResponse.data.plants.Items.map(async (plant : any) => {
             
-            // this.getImage(plant.plantId)
+            var imageBytes = await this.getImage(plant.plantId)
 
-            // var temp = {
-            //   plantId: plant.plantId,
-            //   name: plant.name,
-            //   lastWatered: plant.lastWatered,
-            //   image: 
-            // }
-            this.plantsNew.push(plant)
+            var temp: Plant = {
+              plantId: plant.plantId,
+              name: plant.name,
+              lastWatered: plant.lastWatered,
+              imageBytes: imageBytes
+            }
+            this.plantsNew.push(temp)
           })
           
           
@@ -158,6 +158,8 @@
         try {
           const response = await axios.post(apiUrl, jsonData);
           console.log('Response:', response.data);
+          return response.data.image_base64;
+
         } catch (error) {
           console.error('Error:', error);
         }
@@ -182,8 +184,8 @@
 
     mounted() {
       this.fetchPlants();
-      // this.getImage('1001');
-      this.uploadImage();
+      this.getImage('1001');
+      // this.uploadImage();
     },
   }
 
