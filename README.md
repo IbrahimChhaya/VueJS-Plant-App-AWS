@@ -5,6 +5,11 @@ I used AWS S3, DynamoDB, Amplify, API Gateway, and Lambda to store and deploy th
 
 Available here https://main.d2qp4i6isfubc1.amplifyapp.com/
 
+![HTML](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white)
+![Vue.JS](https://img.shields.io/badge/Vue.js-4FC08D.svg?style=for-the-badge&logo=vuedotjs&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+
 ## Home page
 <p align="center">
       <img width="300" src="/Screens/Screenshot.png">
