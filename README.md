@@ -1,3 +1,13 @@
+# VueJS Plant WebApp
+
+This VueJS web app was made to self-learn AWS. The page would serve to track plant watering schedules and more.
+I used AWS S3, DynamoDB, Amplify, API Gateway, and Lambda to store and deploy the application.
+
+## Home page
+<p align="center">
+      <img width="300" src="/Screenshot.png">
+</p>
+
 # base
 
 ## Project setup
